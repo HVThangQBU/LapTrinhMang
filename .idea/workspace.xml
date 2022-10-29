@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51535f24-d917-4632-bb9f-54df52e6f764" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LapTrinhMang.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Copy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CopyBytes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataIODemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/farrago.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgtest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/outagain.txt" afterDir="false" />
+    <list default="true" id="51535f24-d917-4632-bb9f-54df52e6f764" name="Changes" comment="commit mot so thu">
+      <change afterPath="$PROJECT_DIR$/src/ReadFileArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dayso.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataIODemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataIODemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outagain.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/outagain.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/hoang/IdeaProjects/LapTrinhMang/src"
+    "last_opened_file_path": "C:/Users/hoang/IdeaProjects/LapTrinhMang"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -56,7 +47,7 @@
       <recent name="C:\Users\hoang\IdeaProjects\LapTrinhMang\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DataIODemo">
+  <component name="RunManager" selected="Application.ReadFileArray">
     <configuration name="Copy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Copy" />
       <module name="LapTrinhMang" />
@@ -71,6 +62,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DataIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataIO" />
+      <module name="LapTrinhMang" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DataIODemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataIODemo" />
       <module name="LapTrinhMang" />
@@ -78,10 +76,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReadFileArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReadFileArray" />
+      <module name="LapTrinhMang" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DataIODemo" />
+        <item itemvalue="Application.ReadFileArray" />
         <item itemvalue="Application.CopyBytes" />
+        <item itemvalue="Application.DataIODemo" />
+        <item itemvalue="Application.DataIO" />
         <item itemvalue="Application.Copy" />
       </list>
     </recent_temporary>
@@ -94,8 +101,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666572028077</updated>
-      <workItem from="1666572029991" duration="3095000" />
+      <workItem from="1666572029991" duration="6430000" />
+      <workItem from="1666580551867" duration="465000" />
+      <workItem from="1666581074862" duration="749000" />
+      <workItem from="1666627469617" duration="1071000" />
+      <workItem from="1667005510745" duration="9780000" />
     </task>
+    <task id="LOCAL-00001" summary="commit mot so thu">
+      <created>1666575174333</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666575174333</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit mot so thu" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit mot so thu" />
   </component>
 </project>
