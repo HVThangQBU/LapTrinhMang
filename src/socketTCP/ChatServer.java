@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class ChatServer {
-  public final static int SERVER_PORT = 66;////192.168.100.106
+  public final static int SERVER_PORT = 100;////192.168.100.106
 
   public static void main(String[] args) throws IOException {
     ServerSocket serverSocket = null;
@@ -34,6 +34,7 @@ public class ChatServer {
             System.out.println("From " + socket.getInetAddress().getHostAddress() + ">" + line);
             StringTokenizer st = new StringTokenizer(line);
             List<Integer> array = new ArrayList<>();
+            DataOutputStream outToClient = new DataOutputStream(os);
             int tong = 0;
             while (st.hasMoreTokens()) {
               array.add(Integer.valueOf(st.nextToken()));
@@ -44,7 +45,7 @@ public class ChatServer {
             System.out.println("tong: "+ tong);
             Collections.sort(array);
             System.out.println(array);
-
+            outToClient.writeUTF(String.valueOf(tong)+ " " + String.valueOf(array));
             if (line == null || line.equalsIgnoreCase("quit")) break;
             out.println("Response from K61 server:>>" + line);
           }

@@ -17,9 +17,9 @@ public class ClientTCP {
     sentence_to_server = inFromUser.readLine();
 //
     //Tạo socket cho client kết nối đến server qua ID address và port number
-    Socket clientSocket = new Socket("192.168.31.237", 6543);
+    Socket clientSocket = new Socket("192.168.232.57", 6543);
 
-    //Tạo OutputStream nối với Socket
+    //Tạo OutputStream nối với Sockett
     DataOutputStream outToServer =
       new DataOutputStream(clientSocket.getOutputStream());
 
