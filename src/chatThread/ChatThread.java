@@ -21,11 +21,17 @@ public class ChatThread extends Thread{
     try {
       OutputStream os = socket.getOutputStream();
       InputStream is = socket.getInputStream();
-      BufferedReader br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+    //  BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
       PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(os)));
+
+      DataInputStream inputStream = new DataInputStream(is);
+
+
       String line = "";
       while (true) {
-        line = br.readLine(); // Receive data from client
+    //    line = br.readLine(); // Receive data from client
+
+        line = inputStream.readUTF();
         System.out.println("From " + socket.getInetAddress().getHostAddress() + ">" + line);
         StringTokenizer st = new StringTokenizer(line);
         List<Integer> array = new ArrayList<>();

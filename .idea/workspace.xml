@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51535f24-d917-4632-bb9f-54df52e6f764" name="Changes" comment="commit mot so thu">
-      <change afterPath="$PROJECT_DIR$/src/chat/ChatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chat/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chat/ChatThread.java" afterDir="false" />
+    <list default="true" id="51535f24-d917-4632-bb9f-54df52e6f764" name="Changes" comment="nop bai tap chatthread">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/ClientTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/ClientTCP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socketTCP/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socketTCP/ChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socketTCP/ChatServerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socketTCP/ChatServerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatThread/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatThread/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatThread/ChatThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ChatThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +31,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hoang/IdeaProjects/LapTrinhMang&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/hoang/IdeaProjects/LapTrinhMang",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hoang\IdeaProjects\LapTrinhMang\src" />
@@ -149,7 +150,9 @@
       <workItem from="1667958561085" duration="4841000" />
       <workItem from="1667963703485" duration="330000" />
       <workItem from="1667974400256" duration="1229000" />
-      <workItem from="1667976580757" duration="660000" />
+      <workItem from="1667976580757" duration="809000" />
+      <workItem from="1668045236180" duration="104000" />
+      <workItem from="1668385207865" duration="4356000" />
     </task>
     <task id="LOCAL-00001" summary="commit mot so thu">
       <created>1666575174333</created>
@@ -172,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667573451769</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="nop bai tap chatthread">
+      <created>1667977335304</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667977335304</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +201,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit mot so thu" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit mot so thu" />
+    <MESSAGE value="nop bai tap chatthread" />
+    <option name="LAST_COMMIT_MESSAGE" value="nop bai tap chatthread" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/chatThread/ChatThread.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

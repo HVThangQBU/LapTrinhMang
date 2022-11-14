@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class ChatServer {
 
-    public final static int SERVER_PORT = 100;////192.168.100.106
+    public final static int SERVER_PORT = 100;////192.168.100.106  10.10.12.236
 
     public static void main(String[] args) throws IOException {
       ServerSocket serverSocket = null;

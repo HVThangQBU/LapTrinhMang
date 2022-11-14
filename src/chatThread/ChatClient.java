@@ -5,8 +5,8 @@ import java.net.Socket;
 
 public class ChatClient {
 
-    public final static String SERVER_IP = "192.168.194.169";
-    public final static int SERVER_POST = 100;
+    public final static String SERVER_IP = "172.20.10.9";
+    public final static int SERVER_POST = 99;
     public static void main(String[] args) throws IOException, InterruptedException {
       Socket socket = null;
       String chat = null;
@@ -28,7 +28,7 @@ public class ChatClient {
           DataInputStream intoServer = new DataInputStream(is);
           outToServer.writeBytes( chat + '\n');
 
-          BufferedReader inFromServer = new BufferedReader(new InputStreamReader(is));
+       //   BufferedReader inFromServer = new BufferedReader(new InputStreamReader(is));
           chatoServer = intoServer.readUTF();
           System.out.println("asdaa"+ chatoServer);
 
