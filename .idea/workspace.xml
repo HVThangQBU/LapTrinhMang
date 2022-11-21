@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51535f24-d917-4632-bb9f-54df52e6f764" name="Changes" comment="nop bai tap chatthread">
-      <change afterPath="$PROJECT_DIR$/src/chatThread/ShapeClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chatThread/ShapeServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chatThread/ShapeServer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chatThread/ShapeThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chatThread/ShapeThread2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chatThread/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drawShape/DrawThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drawShape/ThreadServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/udp/EchoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/udp/EchoServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatThread/ShapeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ShapeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatThread/ShapeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ShapeThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +53,13 @@
       <recent name="C:\Users\hoang\IdeaProjects\LapTrinhMang\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShapeClient">
-    <configuration name="ChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chatThread.ChatClient" />
+  <component name="RunManager" selected="Application.EchoClient">
+    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="udp.EchoClient" />
       <module name="LapTrinhMang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chatThread.*" />
+          <option name="PATTERN" value="udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chatThread.Test" />
+    <configuration name="ThreadServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="drawShape.ThreadServer" />
       <module name="LapTrinhMang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chatThread.*" />
+          <option name="PATTERN" value="drawShape.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EchoClient" />
         <item itemvalue="Application.ShapeClient" />
-        <item itemvalue="Application.ShapeServer" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ThreadServer" />
         <item itemvalue="Application.ShapeServer2" />
-        <item itemvalue="Application.ChatClient" />
+        <item itemvalue="Application.ShapeServer" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +159,7 @@
       <workItem from="1668643787512" duration="27000" />
       <workItem from="1668815243395" duration="22967000" />
       <workItem from="1668902790560" duration="10564000" />
+      <workItem from="1668989735576" duration="4206000" />
     </task>
     <task id="LOCAL-00001" summary="commit mot so thu">
       <created>1666575174333</created>

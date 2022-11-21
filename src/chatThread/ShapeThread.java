@@ -146,6 +146,7 @@ public class ShapeThread extends Thread {
       }
       outToClient.writeBytes("\n");
       y -= 2;
+
     }
     outToClient.writeBytes("q");
     outToClient.writeBytes("\n");

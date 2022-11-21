@@ -6,7 +6,7 @@ import java.net.Socket;
 public class ShapeClient {
 
 
-  public final static String SERVER_IP = "192.168.61.106";
+  public final static String SERVER_IP = "192.168.95.57";
   public final static int SERVER_POST = 999;
   public static void main(String[] args) throws IOException, InterruptedException {
     Socket socket = null;
