@@ -63,6 +63,4 @@ public class ReadFileArray  {
       e.printStackTrace();
     }
   }
-
-
 }

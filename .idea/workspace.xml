@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51535f24-d917-4632-bb9f-54df52e6f764" name="Changes" comment="nop bai tap chatthread">
-      <change afterPath="$PROJECT_DIR$/src/drawShape/DrawThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drawShape/ThreadServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/udp/EchoClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/udp/EchoServer.java" afterDir="false" />
+    <list default="true" id="51535f24-d917-4632-bb9f-54df52e6f764" name="Changes" comment="nop bai tap max UDP">
+      <change afterPath="$PROJECT_DIR$/src/btTCP/BaiTap2ClientUDP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btTCP/Baitap2Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btTCP/Baitap2Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btTCP/Baitap2ServerUDP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btTCP/Baitap2Thread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btTCP/Battap2ServerTT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btTCP/Tesssa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chatThread/ChatServerTT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadFileArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFileArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatThread/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatThread/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatThread/ChatThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ChatThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chatThread/ShapeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ShapeClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatThread/ShapeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatThread/ShapeThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/udp/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/udp/EchoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/udp/MaxClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/udp/MaxClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/udp/MaxServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/udp/MaxServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +57,11 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -53,13 +69,13 @@
       <recent name="C:\Users\hoang\IdeaProjects\LapTrinhMang\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EchoClient">
-    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="udp.EchoClient" />
+  <component name="RunManager" selected="Application.ReadFileArray">
+    <configuration name="BaiTap2ClientUDP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="btTCP.BaiTap2ClientUDP" />
       <module name="LapTrinhMang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="udp.*" />
+          <option name="PATTERN" value="btTCP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chatThread.ShapeClient" />
+    <configuration name="Baitap2ServerUDP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="btTCP.Baitap2ServerUDP" />
       <module name="LapTrinhMang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chatThread.*" />
+          <option name="PATTERN" value="btTCP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chatThread.ShapeServer" />
+    <configuration name="Battap2ServerTT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="btTCP.Battap2ServerTT" />
       <module name="LapTrinhMang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chatThread.*" />
+          <option name="PATTERN" value="btTCP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,25 +109,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeServer2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chatThread.ShapeServer2" />
+    <configuration name="ReadFileArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReadFileArray" />
       <module name="LapTrinhMang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chatThread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="drawShape.ThreadServer" />
+    <configuration name="Tesssa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="btTCP.Tesssa" />
       <module name="LapTrinhMang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="drawShape.*" />
+          <option name="PATTERN" value="btTCP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EchoClient" />
-        <item itemvalue="Application.ShapeClient" />
-        <item itemvalue="Application.ThreadServer" />
-        <item itemvalue="Application.ShapeServer2" />
-        <item itemvalue="Application.ShapeServer" />
+        <item itemvalue="Application.ReadFileArray" />
+        <item itemvalue="Application.BaiTap2ClientUDP" />
+        <item itemvalue="Application.Baitap2ServerUDP" />
+        <item itemvalue="Application.Tesssa" />
+        <item itemvalue="Application.Battap2ServerTT" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +169,20 @@
       <workItem from="1668643787512" duration="27000" />
       <workItem from="1668815243395" duration="22967000" />
       <workItem from="1668902790560" duration="10564000" />
-      <workItem from="1668989735576" duration="4206000" />
+      <workItem from="1668989735576" duration="8258000" />
+      <workItem from="1669257844184" duration="456000" />
+      <workItem from="1669461724042" duration="2405000" />
+      <workItem from="1669466808530" duration="638000" />
+      <workItem from="1669596087176" duration="5562000" />
+      <workItem from="1669646745772" duration="19000" />
+      <workItem from="1670119397969" duration="9171000" />
+      <workItem from="1670199612487" duration="6216000" />
+      <workItem from="1670206598666" duration="224000" />
+      <workItem from="1670207058767" duration="244000" />
+      <workItem from="1670229238620" duration="45000" />
+      <workItem from="1671247848049" duration="14158000" />
+      <workItem from="1671280844731" duration="6928000" />
+      <workItem from="1671386625808" duration="1951000" />
     </task>
     <task id="LOCAL-00001" summary="commit mot so thu">
       <created>1666575174333</created>
@@ -196,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668389619012</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="nop bai tap max UDP">
+      <created>1670201908158</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670201908158</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +246,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit mot so thu" />
     <MESSAGE value="nop bai tap chatthread" />
-    <option name="LAST_COMMIT_MESSAGE" value="nop bai tap chatthread" />
+    <MESSAGE value="nop bai tap max UDP" />
+    <option name="LAST_COMMIT_MESSAGE" value="nop bai tap max UDP" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

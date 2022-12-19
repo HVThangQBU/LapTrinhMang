@@ -21,32 +21,33 @@ public class ChatThread extends Thread{
     try {
       OutputStream os = socket.getOutputStream();
       InputStream is = socket.getInputStream();
-    //  BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+      BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
       PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(os)));
-
       DataInputStream inputStream = new DataInputStream(is);
-
-
       String line = "";
       while (true) {
-    //    line = br.readLine(); // Receive data from client
-
-        line = inputStream.readUTF();
+        line = br.readLine(); // Receive data from client
         System.out.println("From " + socket.getInetAddress().getHostAddress() + ">" + line);
         StringTokenizer st = new StringTokenizer(line);
         List<Integer> array = new ArrayList<>();
         DataOutputStream outToClient = new DataOutputStream(os);
-        int tong = 0;
+
         while (st.hasMoreTokens()) {
           array.add(Integer.valueOf(st.nextToken()));
         }
+        // tinh tong array
+        int tong = 0;
         for (Integer a : array) {
           tong += a;
         }
-        System.out.println("tong: "+ tong);
+        // sap xep array
         Collections.sort(array);
         System.out.println(array);
-        outToClient.writeUTF(String.valueOf(tong)+ " " + String.valueOf(array));
+        // kiem max
+        String  max = String.valueOf(Collections.max(array));
+        System.out.println(max);
+        ///
+        outToClient.writeUTF( String.valueOf(array) + " MAX: " +max);
         if (line == null || line.equalsIgnoreCase("quit")) break;
         out.println("Response from K61 server:>>" + line);
       }

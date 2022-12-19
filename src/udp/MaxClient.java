@@ -20,7 +20,6 @@ public class MaxClient {
     try {
       ds = new DatagramSocket(); // Tạo DatagramSocket
       System.out.println("Client started ");
-
       InetAddress server = InetAddress.getByName(SERVER_IP);
       while (true) {
         System.out.println("Enter your message: ");
@@ -37,7 +36,6 @@ public class MaxClient {
         // Gói tin nhận
         DatagramPacket incoming = new DatagramPacket(BUFFER, BUFFER.length);
         ds.receive(incoming); // Chờ nhận dữ liệu từ EchoServer gởi về
-
         // Đổi dữ liệu nhận được dạng mảng bytes ra chuỗi và in ra màn hình
         System.out.println("Received: " + new String(incoming.getData(), 0, incoming.getLength()));
       }

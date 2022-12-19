@@ -1,6 +1,5 @@
-package udp;
+package btTCP;
 
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -9,8 +8,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class MaxServer {
 
+public class Baitap2ServerUDP {
 
   public final static int SERVER_PORT = 7; // Cổng mặc định của Echo Server
   public final static byte[] BUFFER = new byte[4096]; // Vùng đệm chứa dữ liệu cho gói tin nhận
@@ -30,23 +29,29 @@ public class MaxServer {
         // Lấy dữ liệu khỏi gói tin nhận
         String message = new String(incoming.getData(), 0, incoming.getLength());
         System.out.println("Received: " + message);
-        StringTokenizer st = new StringTokenizer(message);
+        // array tinh snt
         List<Integer> array = new ArrayList<>();
-        int tong = 0;
-        while (st.hasMoreTokens()) {
-          int a = Integer.valueOf(st.nextToken());
-          System.out.println("dodai: "+a);
-          array.add(a);
-        }
-        // tinh maxx
-        String  max = String.valueOf(Collections.max(array));
-        System.out.println(max);
-        // sap xep array
-        Collections.sort(array);
-        String arr = String.valueOf(array);
-        System.out.println(array);
+        // array tinh tong
+        List<Integer> arrayT = new ArrayList<>();
+        String[] abc = message.split(" ");
+//        for (int i = Integer.parseInt(abc[0]); i < Integer.parseInt(abc[1]); i++) {
+          //tinh tong
+          String tong = String.valueOf(tinhTong(Integer.parseInt(message)));
+          System.out.println("tong+ " + tong);
+//          if (tong == 15) {
+//            arrayT.add(i);
+//          }
+//          //tinh snt
+//          if (isPrimeNumber(i)) {
+//            System.out.println("snt" + i);
+//            array.add(i);
+//          }
+//          //
+//        }
+//        String  max = String.valueOf(array);
+//        System.out.println(arrayT);
         // Tạo gói tin gởi chứa dữ liệu vừa nhận được
-        DatagramPacket outsending = new DatagramPacket(arr.getBytes(), arr.length(),
+        DatagramPacket outsending = new DatagramPacket(tong.getBytes(), tong.length(),
           incoming.getAddress(), incoming.getPort());
         ds.send(outsending);
       }
@@ -57,5 +62,29 @@ public class MaxServer {
         ds.close();
       }
     }
+  }
+  public static boolean isPrimeNumber(int n) {
+    // so nguyen n < 2 khong phai la so nguyen to
+    if (n < 2) {
+      return false;
+    }
+    // check so nguyen to khi n >= 2
+    int squareRoot = (int) Math.sqrt(n);
+    for (int i = 2; i <= squareRoot; i++) {
+      if (n % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  public static int tinhTong(int n) {
+    int tong = 0, t, tmp = n;
+    while (tmp > 0) {
+      t = tmp % 10;
+      tong += t;
+      tmp /= 10;
+    }
+    return tong;
   }
 }

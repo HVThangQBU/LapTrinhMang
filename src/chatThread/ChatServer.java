@@ -10,7 +10,6 @@ public class ChatServer {
 
     public static void main(String[] args) throws IOException {
       ServerSocket serverSocket = null;
-
       try {
         System.out.println("Binding to port " + SERVER_PORT + ", please wait  ...");
         serverSocket = new ServerSocket(SERVER_PORT);
@@ -24,8 +23,6 @@ public class ChatServer {
             thread.start();
           } catch (IOException e) {System.err.println(" Connection Error: " + e);}
         }
-
-
       } catch (IOException e1) {
         e1.printStackTrace();
       } finally {
